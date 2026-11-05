@@ -1,0 +1,14 @@
+name: Feature request
+description: An idea for the site
+labels: [feature]
+body:
+  - type: textarea
+    id: what
+    attributes: {label: What you want, description: "What should it do, and why would it help?"}
+    validations: {required: true}
+  - type: dropdown
+    id: area
+    attributes: {label: Area, options: [Live spectate, Replay viewer, Clips, Chat, Radio / music, Stages, Site / accounts, Other]}
+  - type: textarea
+    id: example
+    attributes: {label: Examples, description: "Sketches, screenshots, or another site that does it"}

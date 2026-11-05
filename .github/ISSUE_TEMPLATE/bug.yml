@@ -1,0 +1,20 @@
+name: Bug report
+description: Something on the site is broken or looks wrong
+labels: [bug]
+body:
+  - type: input
+    id: link
+    attributes: {label: Link, description: "The replay / live / clip page where it happened"}
+  - type: textarea
+    id: what
+    attributes: {label: What happened, description: "What you did, what you expected, what you got"}
+    validations: {required: true}
+  - type: dropdown
+    id: area
+    attributes: {label: Area, options: [Live spectate, Replay viewer, Clips, Chat, Radio / music, Stages, Site / accounts, Other]}
+  - type: input
+    id: device
+    attributes: {label: Device and browser, placeholder: "e.g. Pixel 7, Chrome / Windows 11, Firefox"}
+  - type: textarea
+    id: media
+    attributes: {label: Screenshot or video, description: "Drag files in here"}
